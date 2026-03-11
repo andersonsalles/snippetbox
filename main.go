@@ -24,8 +24,7 @@ func main() {
 	// two parameters: the TCP network address to listen on (in this case ":4000")
 	// and the servemux we just created. If http.ListenAndServe() returns an error
 	// we use the log.Fatal() function to log the error message and terminate the
-	// program. Note that any error returned by http.ListenAndServe() is always
-	// non-nil.
+	// program. Note that any error returned by http.ListenAndServe() is always non-nil.
 	err := http.ListenAndServe(":4000", mux)
 	log.Fatal(err)
 }
